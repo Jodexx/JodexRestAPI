@@ -1,0 +1,16 @@
+name: JodexRestAPI
+version: 1.0.1
+api-version: 1.13
+main: com.jodexindustries.jodexrestapi.Main
+authors: [_Jodex__]
+commands:
+  jodexra:
+    aliases: [jodexrestapi, jrapi]
+depend: [PlaceholderAPI]
+permissions:
+  jodexrestapi.*:
+    children:
+      jodexrestapi.reloadconfig: true
+      jodexrestapi.stop: true
+      jodexrestapi.start: true
+      jodexrestapi.url: true

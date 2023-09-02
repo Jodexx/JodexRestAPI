@@ -1,0 +1,40 @@
+# НЕ ТРОГАТЬ!!!
+config-ver: "1.0"
+
+webserver:
+  port: 8080
+# PlayerRequest (/api/player/:player) - информация о игроке
+PlayerRequest: true
+# ServerRequest (/api/server) - информация о сервере
+ServerRequest: true
+# PlayTimeRequest (/api/server/playtime) - информация о наигранном времени игроков
+PlayTimeRequest: true
+
+CheckForWorldTime: "world"
+
+# /api/server
+Api:
+  Server:
+    worldTimeStatus: true
+    playerList: true
+    serverOnline: true
+    serverUptime: true
+    serverTPS: true
+    serverRamMax: true
+    serverRamUsed: true
+    pingAll: true
+    status: true
+    # Новые данные могут регистрироваться также как представлены примеры ниже:
+  Player: # /api/player/:player
+    kills: "%statistic_player_kills%"
+    mobKills: "%statistic_mob_kills%"
+    deaths: "%statistic_deaths%"
+    timeDays: "%statistic_time_played:days%"
+    timeHours: "%statistic_time_played:hours%"
+    timeMinutes: "%statistic_time_played:minutes%"
+    timeSeconds: "%statistic_time_played:seconds%"
+    balance: "%vault_eco_balance%"
+# PostRequest - Отправка запроса POST REST на веб сервер
+PostRequest: false
+
+# Примеры использования: https://github.com/JodexIndustries/JodexRestAPI/blob/main/README.md
