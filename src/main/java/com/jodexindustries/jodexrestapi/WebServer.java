@@ -42,7 +42,7 @@ public class WebServer {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        Main.getInstance().logger.info(ChatColor.RED + "Web сервер успешно остановлен!");
+        Main.getInstance().logger.info(ChatColor.RED + "Web server successful stopped!");
     }
 
     public HttpServer getServer() {
@@ -213,6 +213,6 @@ public class WebServer {
 
             server.start();
         }
-        Main.getInstance().logger.info(ChatColor.GREEN + "Web сервер успешно запущен!");
+        Main.getInstance().logger.info(ChatColor.GREEN + "Web server successful started!");
     }
 }
