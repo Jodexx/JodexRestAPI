@@ -24,7 +24,6 @@ public class Main extends JavaPlugin {
     public void onDisable() {
         if (Utils.isServerRunning(WebServer.server)) {
             WebServer.stop();
-            logger.info(ChatColor.RED + "Web сервер успешно остановлен!");
         }
 
     }
