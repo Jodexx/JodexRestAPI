@@ -2,7 +2,8 @@
 RestAPI plugin for bukkit/spigot/paper server
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H8GLWZE)
 
-## /api/server
+### Server response
+#### /api/server
 ```JSON
 {
   "serverOnline":"1",
@@ -12,7 +13,7 @@ RestAPI plugin for bukkit/spigot/paper server
   "serverTPS":"*20.0"
 }
 ```
-## /api/player/NICKNAME
+#### /api/player/NICKNAME
 ```JSON
 {
   "kills":"0",
@@ -27,8 +28,8 @@ RestAPI plugin for bukkit/spigot/paper server
 }
 
 ```
-## NodeJS examples
-PlayerRequest (node-fetch)
+### NodeJS examples
+#### PlayerRequest (node-fetch)
 
 ```js
   let url = `http://localhost:8080/api/player/NICKNAME`
@@ -41,7 +42,7 @@ PlayerRequest (node-fetch)
   const json = await response.json();
 ```
 
-PostRequest (node-fetch)
+#### PostRequest (node-fetch)
 ```js
   let url = `http://localhost:8080/api/server/command`
   let response;
