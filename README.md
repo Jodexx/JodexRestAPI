@@ -1,5 +1,5 @@
 # JodexRestAPI
-RestAPI plugin for bukkit/spigot/paper server
+RestAPI plugin for bukkit/spigot/paper server <br>
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H8GLWZE)
 
 ### Server response
